@@ -1,9 +1,10 @@
-var express = require('express');
-var router = express.Router();
+const express = require("express");
+const router = new express.Router();
+const path = require("path");
+const publicDicrectoryPath = path.join(__dirname, "../public");
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/my-account", (req, res) => {
+  res.sendFile(publicDicrectoryPath + "/my-google-events.html");
 });
 
 module.exports = router;
