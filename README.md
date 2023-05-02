@@ -1,10 +1,10 @@
 # gcal-integration
 Google Calender Integration to get and create google events
-a. git clone <repo-link>
-b. generate credentials.json here 
+* git clone <repo-link>
+* generate credentials.json here 
 https://developers.google.com/calendar/api/quickstart/nodejs#set_up_your_environment
-c. move credentials.json in main directory
-d. npm start
+* move credentials.json in main directory
+* npm start
 
 1. List all Google Events
 
