@@ -1,7 +1,4 @@
 # gcal-integration
-Google Calender Integration to get and create google events
-
-# gcal-integration
 Google Calender Integration to get and create google events on your primary google calender
 * git clone [repo-link]
 * generate credentials.json here 
