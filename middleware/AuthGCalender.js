@@ -67,12 +67,5 @@ async function authorize() {
   return client;
 }
 
-/**
- * Lists the next 10 events on the user's primary calendar.
- * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
- */
-
-
-// authorize().then(listEvents).catch(console.error);
-
-module.exports = router;
+// module.exports = router;
+module.exports = { authorize };
