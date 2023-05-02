@@ -56,4 +56,24 @@ class GCalender {
   }
 }
 
+const gcal = new GCalender();
+// gcal.listEvents();
+
+const event = {
+  summary: "Google Event Created Through API",
+  location: "Online",
+  description: "https://meet-google.com/test-test",
+  start: {
+    dateTime: "2023-05-04T09:00:00-07:00",
+    timeZone: "IST",
+  },
+  end: {
+    dateTime: "2023-05-05T09:00:00-07:00",
+    timeZone: "IST",
+  },
+  attendees: [{ email: "riya090401@gmail.com" }],
+};
+
+gcal.createEvent(event).then(gcal.listEvents());
+
 module.exports = GCalender;
